@@ -1,0 +1,1139 @@
+/*
+Theme name: deuxluxe
+Author: Caroline Olby, Amanda Jakobsson
+Description: deuxluxe own theme
+Version: 2.0
+Text Domaine: deuxluxe.se
+*/
+
+
+/*FOR IPHONE 6/7/8*/
+
+body {
+    margin: 0;
+    font-family: avenirNextUltraLight;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+/*IMAGE*/
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+
+/*FONT*/
+
+@font-face {
+    font-family: avenirNextUltraLight;
+    src: url("assets/fonts/avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-UltLt.otf");
+    font-weight: 100;
+}
+
+
+/*FONT*/
+
+@font-face {
+    font-family: avenirNextRegular;
+    src: url("assets/fonts/avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-Regular.otf");
+    font-weight: 100;
+}
+
+
+/*LINE*/
+
+.Line {
+    background: #9c9898;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    margin-top: 69.5px;
+    margin-bottom: 69.5px;
+}
+
+
+/*Menu__LINE*/
+
+.Menu__Line {
+    background: #9c9898;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/*HEADER*/
+
+
+/*MENU*/
+
+.Header {
+    height: 100px;
+}
+
+.Header__Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-family: avenirNextUltraLight;
+    background: #f2f1f1;
+    color: #000;
+    height: 100px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    min-width: 100%;
+}
+
+
+/*BUTTON*/
+
+.button {
+    display: column;
+    margin: 2px;
+    margin-left: 3px;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.Nav li a {
+    display: column;
+    margin: 2px;
+    margin-left: 3px;
+    padding: 5px 20px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.Nav .menu-item {
+    padding: 5px;
+}
+
+
+/*BARSICON*/
+
+.Header__Menu-Icon {
+    width: 40px;
+    height: 25px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 15px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.Header__Menu-Text {
+    height: 49px;
+    width: 107px;
+    font-size: 25px;
+    padding-top: 37px;
+    cursor: pointer;
+    font-weight: 700;
+    display: none;
+}
+
+.Header__Menu-Icon:hover {
+    opacity: 0.3;
+}
+
+
+/*DROPDOWN*/
+
+.Header__Overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.Menu {
+    padding: 40px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 90vw;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    transition: 0.3s;
+    margin-left: -90vw;
+}
+
+.active {
+    user-select: none;
+    margin-left: 0px !important;
+}
+
+.Menu__Icon {
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    cursor: pointer;
+    align-content: center;
+}
+
+.Menu__Icon {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.Menu__Icon:hover {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.Menu__Icon.active {
+    transform: rotate(45deg);
+}
+
+.Social {
+    height: 35px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.Social:hover {
+    opacity: 0.3;
+}
+
+.Menu__Copy {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+
+/*LINK STYLING*/
+
+a {
+    text-decoration-line: none;
+    color: #000;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #8a8a8a;
+}
+
+
+/* selected link*/
+
+a:active {
+    color: #8a8a8a;
+}
+
+
+/*NEWSLETTER*/
+
+
+/*SUBSCRIBE - SIGN UP*/
+
+.Overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.Newsletter {
+    background-color: #fff;
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    position: fixed;
+    z-index: 3;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.Newsletter__Containter-Icon {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.Newsletter__Icon {
+    width: 20px;
+    height: 20px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.Newsletter__Icon:hover {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.Newsletter__Icon.active {
+    transform: rotate(45deg);
+}
+
+.Newsletter__Form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Newsletter__Form .wpcf7-email {
+    background: #ededed;
+    font-family: avenirNextUltraLight;
+    height: 50px;
+    width: 300px;
+    box-shadow: 0px 0px 0px 0px;
+    border: 0;
+}
+
+.Newsletter__Form .wpcf7-submit {
+    background: #585858;
+    color: #fff;
+    font-family: avenirNextUltraLight;
+    height: 48px;
+    width: 100px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 0px 0px;
+    border: 0;
+}
+
+.Newsletter__Paragraph1,
+.Newsletter__Paragraph2 {
+    padding: 20px;
+}
+
+.Newsletter__Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.Newsletter__Line {
+    background: #9c9898;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*HEROHEADER*/
+
+
+/*SECTION headerHero - HOME, ABOUT, LIFESTYLE, CONTACT*/
+
+.HeaderHero {
+    height: 450px;
+}
+
+
+/*#headlineHeaderHome,
+#headlineHeaderContact */
+
+.HeaderHero__Title {
+    margin: 0;
+    font-size: 70px;
+    text-align: center;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 20px;
+    font-weight: bold;
+}
+
+.HeaderHero__Text {
+    font-family: avenirNextRegular;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+
+/*SECTION - TESTIMONIAL & SUBSCRIBE*/
+
+.Testimonial {
+    margin-top: 50px;
+    height: 300px;
+}
+
+
+/*headline in testimonial*/
+
+.Testimonial__Title {
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+    font-size: 40px;
+}
+
+
+/*paragraph in testimonial*/
+
+.Testimonial__Text {
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-right: 40px;
+}
+
+
+/*SECTION - HERO*/
+
+
+/*parallax backgroundImage*/
+
+.Parallax-Background {
+    background-attachment: fixed;
+    background-position: center center;
+    height: 500px;
+}
+
+
+/*SECTION - STANDARD*/
+
+.Standard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Standard__Column {
+    flex: 100%;
+}
+
+.Standard__Column__Container {
+    height: 500px;
+}
+
+.Standard__Aside {
+    height: auto;
+}
+
+.Standard__Headline {
+    font-weight: 100;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+
+.Standard__Column p {
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+/*SECTION - POST & SUBSCRIPE*/
+
+.Post__Headline,
+.Subscribe__Title {
+    text-align: center;
+    font-weight: 100;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.Post p,
+.Subscribe__Text {
+    padding: 20px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+
+/*image*/
+
+#imgSection {
+    height: auto;
+}
+
+
+/*HOME.PHP*/
+
+
+/*LIFESTYLE*/
+
+.Archive-Post__Items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Post__Item {
+    width: 100%;
+}
+
+.Post__Item-Meta {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px;
+    color: #c5c5c5;
+}
+
+.Post__Item-Image:hover {
+    opacity: 0.3;
+}
+
+.Post__Item-Button {
+    display: block;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+    color: #c5c5c5;
+    width: 60%;
+    max-width: 376px;
+    padding: 10px;
+    height: 35px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.SidebarWidget {
+    background: #ffffff;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+#s {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+}
+
+#searchsubmit {
+    border: 0.5px solid #c5c5c5 !important;
+    font-family: avenirNextUltraLight;
+    padding: 3px;
+    font-size: 13px;
+    margin-top: 7px;
+    color: #5c5c5c;
+}
+
+#searchsubmit:hover {
+    background-color: #b4b4b4;
+    color: #ffffff;
+}
+
+.image .wp-image-198,
+.attachment-medium,
+.size-medium {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.Post__Item-Container {
+    text-align: center;
+}
+
+.Archive-Post__Pagination {
+    flex-direction: row;
+    text-align: center;
+    background: #f2f1f1;
+    width: 100%;
+    height: 100px;
+    color: #303030;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.pagination.navigation {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*SECTION - QUOTE*/
+
+.Quote {
+    height: 150px;
+}
+
+.Quote__Text {
+    font-weight: 100;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+
+/*SECTION - Gallery*/
+
+.Gallery__Container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Gallery__Item {
+    flex: 100%;
+}
+
+
+/*SECTION - PROMOTIONALS*/
+
+.Promotionals__Container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Promotionals__Title {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.Promotionals__Items {
+    flex: 100%;
+    text-align: center;
+}
+
+.Promotionals__Item-Image {
+    width: 90%;
+}
+
+.Promotionals__Item-Name {
+    font-family: avenirNextRegular;
+    font-weight: 100;
+}
+
+.Promotionals__Item-Text {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+/*SECTION - SUBSCRIBE*/
+
+.Subscribe__Section {
+    height: 550px;
+}
+
+
+/*FORM SUBSCRIBE*/
+
+.Subscribe__Item-Button {
+    text-align: center;
+}
+
+
+/*SUBSCRIBE EMAIL*/
+
+.Subscribe__Item-Button--Email {
+    background: #ededed;
+    font-family: avenirNextUltraLight;
+    padding: 20px;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 0px 0px;
+    border: 0;
+}
+
+
+/*BUTTON SUBSCRIBE*/
+
+.Subscribe__Item-Button--SignUp {
+    background: #585858;
+    color: #fff;
+    font-family: avenirNextUltraLight;
+    height: 48px;
+    padding: 15px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 0px 0px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/*SECTION - SLIDESHOWPOSTS*/
+
+.Owl-Carousel__Image {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Slideshow-Item__Image:hover {
+    opacity: 0.3;
+}
+
+.SlideshowPosts-Title {
+    text-align: center;
+}
+
+.Owl-Carousel__Text {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 25px;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #999999;
+}
+
+.owl-nav [class*=owl-]:hover {
+    background: #999999;
+}
+
+
+/*SLIDESHOW*/
+
+.SlideShow {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myslide {
+    display: none;
+    animation: fadeIn 3s;
+}
+
+
+/*SECTION - 404*/
+
+.Error {
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+/*SECTION - FAQ*/
+
+.Hero__faq {
+    height: 500px;
+}
+
+.Picture__Right {
+    align-content: right;
+    position: relative;
+    min-height: 1px;
+    max-height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+}
+
+section.Slideshow-Faq {
+    height: 400px;
+}
+
+section.Slideshow-Faq .owl-wrapper-outer {
+    overflow: hidden;
+}
+
+section.Slideshow-Faq .owl-item {
+    float: left;
+}
+
+section.Slideshow-Faq .Slide-Faq {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #fff;
+    height: auto;
+    text-align: center;
+    font-family: avenirNextUltraLight;
+    font-weight: 100;
+    color: #000;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Footer {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.Footer__Column {
+    flex: 33.33%;
+}
+
+.headingFooter {
+    font-family: avenirNextRegular;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+}
+
+.linkFooter {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+
+/*MEDIAQUERIES*/
+
+
+/*FOR TABLET*/
+
+@media (min-width: 801px) {
+    /*HEADERHERO*/
+    /*HEADLINE - HEADER*/
+    .HeaderHero__Title {
+        font-size: 90px;
+        flex-direction: row;
+    }
+    /*PARAGRAPH */
+    /*[deluxe]*/
+    .HeaderHero__Text {
+        font-size: 60px;
+    }
+    /*NAVBAR*/
+    .Header__Menu-Text {
+        display: flex;
+    }
+    .Menu {
+        width: 300px;
+        margin-left: -300px;
+    }
+    .paragraphSection {
+        padding: 30px;
+        font-size: 25px;
+    }
+    #buttonSubscribe {
+        margin-left: 30px;
+    }
+    .spaceSection {
+        margin-top: 60px;
+    }
+    #textSectionSpace {
+        margin-top: 130px;
+    }
+    #drinkSection {
+        height: 400px;
+    }
+    #foodSection {
+        height: 400px;
+    }
+    #signUp {
+        width: 550px;
+        height: 550px;
+    }
+    /*GALLERY*/
+    .Gallery__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Gallery__Item {
+        max-width: 33.3%;
+    }
+    /*PROMOTIONALS*/
+    .Promotionals__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Promotionals__Items {
+        flex: 33.3%;
+    }
+    /*STANDARD*/
+    .Standard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Standard__Column {
+        flex: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /*HOME.PHP*/
+    /*LIFESTYLE*/
+    .Archive-Post__Items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Post__Item {
+        width: 50%;
+    }
+    /*SIDEBAR*/
+    .SidebarWidget {
+        background: grey;
+    }
+}
+
+
+/*FOR DESKTOP*/
+
+@media (min-width: 1250px) {
+    /*HEADERHERO*/
+    /*HEADLINE - HEADER*/
+    .HeaderHero__Title {
+        font-size: 150px;
+        flex-direction: row;
+    }
+    /*PARAGRAPH - HEADER*/
+    /*[deluxe]*/
+    .HeaderHero__Text {
+        font-size: 60px;
+    }
+    /*NAVBAR*/
+    .Header__Menu-Text {
+        display: flex;
+    }
+    .paragraphSection {
+        padding: 30px;
+        font-size: 25px;
+    }
+    .spaceSection {
+        margin-top: 60px;
+    }
+    #textSectionSpace {
+        margin-top: 130px;
+    }
+    section#subscribeSection {
+        height: 480px;
+    }
+    #buttonSubscribe {
+        margin-left: 30px;
+    }
+    #drinkSection {
+        height: 300px;
+    }
+    #foodSection {
+        height: 400px;
+    }
+    #signUp {
+        width: 550px;
+        height: 550px;
+    }
+    /*GALLERY*/
+    .Gallery__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Gallery__Item {
+        max-width: 33.3%;
+    }
+    /*PROMOTIONALS*/
+    .Promotionals__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Promotionals__Item {
+        flex: 33.3%;
+    }
+    /*STANDARD*/
+    .Standard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Standard__Column {
+        flex: 50%;
+    }
+    /*HOME.PHP*/
+    /*LIFESTYLE*/
+    .Archive-Post__Container {
+        display: flex;
+    }
+    .Archive-Post__Items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Post__Item {
+        width: 33.3%;
+    }
+    /*SIDEBAR*/
+    .SidebarWidget {
+        background: #ffffff;
+        display: block;
+        padding: 20px;
+        width: 3200px;
+    }
+}
+
+
+/*MEDIAQUERIS*/
+
+
+/*FOR TABLET*/
+
+@media (min-width: 801px) {
+    /*HEADERHERO*/
+    /*HEADLINE - HEADER*/
+    .HeaderHero__Title {
+        font-size: 90px;
+        flex-direction: row;
+    }
+    /*PARAGRAPH */
+    /*[deluxe]*/
+    .HeaderHero__Text {
+        font-size: 60px;
+    }
+    /*NAVBAR*/
+    .Header__Menu-Text {
+        display: flex;
+    }
+    .Menu {
+        width: 300px;
+        margin-left: -300px;
+    }
+    .paragraphSection {
+        padding: 30px;
+        font-size: 25px;
+    }
+    #buttonSubscribe {
+        margin-left: 30px;
+    }
+    .spaceSection {
+        margin-top: 60px;
+    }
+    #textSectionSpace {
+        margin-top: 130px;
+    }
+    #drinkSection {
+        height: 400px;
+    }
+    #foodSection {
+        height: 400px;
+    }
+    #signUp {
+        width: 550px;
+        height: 550px;
+    }
+    /*GALLERY*/
+    .Gallery__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Gallery__Item {
+        max-width: 33.3%;
+    }
+    /*PROMOTIONALS*/
+    .Promotionals__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Promotionals__Items {
+        flex: 33.3%;
+    }
+    /*STANDARD*/
+    .Standard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Standard__Column {
+        flex: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /*HOME.PHP*/
+    /*LIFESTYLE*/
+    .Archive-Post__Items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Post__Item {
+        width: 50%;
+    }
+    /*SIDEBAR*/
+    .SidebarWidget {
+        background: grey;
+    }
+}
